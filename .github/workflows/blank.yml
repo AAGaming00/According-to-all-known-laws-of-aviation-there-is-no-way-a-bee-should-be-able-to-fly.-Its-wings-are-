@@ -5,10 +5,12 @@ name: According to all known laws of aviation, there is no way a bee should be a
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "accordingtoallknownlawsofaviationthereisnowayabeeshouldbeabletoflyitswingsaretoosmalltogetitsfatlittlebodyoffthegroundthebeeofcoursefliesanywaybecausebeesdontcarewhathumansthinkisimpossibleyellowblackyellowblackyellowblackyellowblackoohblackandyellow" branch
-  - push
-  - pull_request
+  push:
+  pull_request:
   # Allows you to run this workflow manually from the Actions tab
-  - workflow_dispatch
+  workflow_dispatch:
+  schedule:
+    - cron: "0 13 * * 1"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
